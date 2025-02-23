@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="my-3">
+      <app-couter-output [counter]="counter"></app-couter-output>
+    </div>
+    <div class="my-3">
+      <app-couter-buttons
+        (increment)="onIncrement()"
+        (decrement)="OnDecrement()"
+        (reset)="onReset()"
+      ></app-couter-buttons>
+    </div>
+  </div>
+</div>
