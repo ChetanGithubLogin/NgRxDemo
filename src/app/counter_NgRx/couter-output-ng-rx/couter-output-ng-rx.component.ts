@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Store } from '@ngrx/store';
+import { CounterState } from '../state/counter.state';
 
 @Component({
   selector: 'app-couter-output-ng-rx',
@@ -8,7 +9,7 @@ import { Store } from '@ngrx/store';
 })
 export class CouterOutputNgRxComponent {
   counter!: number;
-  constructor(private store: Store<{ counter: { counter: number } }>) {
+  constructor(private store: Store<{ counter: CounterState }>) {
 
   }
 

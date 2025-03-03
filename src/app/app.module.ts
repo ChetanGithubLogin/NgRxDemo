@@ -11,6 +11,8 @@ import { CouterButtonsNgRxComponent } from './counter_NgRx/couter-buttons-ng-rx/
 import { CouterOutputNgRxComponent } from './counter_NgRx/couter-output-ng-rx/couter-output-ng-rx.component';
 import { StoreModule } from '@ngrx/store';
 import { counterReducer } from './counter_NgRx/reducer/counter.reducer';
+import { CounterInputComponent } from './counter_NgRx/counter-input/counter-input.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { counterReducer } from './counter_NgRx/reducer/counter.reducer';
     CouterButtonsComponent,
     CouterNgRxComponent,
     CouterButtonsNgRxComponent,
-    CouterOutputNgRxComponent
+    CouterOutputNgRxComponent,
+    CounterInputComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     StoreModule.forRoot({ counter: counterReducer })
   ],
   providers: [],
